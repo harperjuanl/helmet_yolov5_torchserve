@@ -2,9 +2,20 @@
 
 #### Prerequisites
 
-- Python3
+- [Python3 and pip3](https://docs.python-guide.org/starting/install3/linux/) 
 
-- Docker 
+```bash
+# check the python version
+$ python3 --version
+# if not, install as following
+$ sudo apt update
+$ sudo apt -y upgrade
+$ sudo apt install python3.8
+$ sudo apt install python3-pip
+$ python3 --version
+```
+
+- Docker:  Docker Engine comes bundled with Docker Desktop for Linux, this is the easiest and quickest way to get started. If not, you could follow the [detailed installation guide](https://docs.docker.com/engine/install/ubuntu/)
 
 
 #### Installation
