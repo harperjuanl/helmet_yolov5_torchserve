@@ -1,1 +1,1 @@
-# helmet_yolov5_torchserve
+# Helmet Detection Model Deployment on Signle Node
