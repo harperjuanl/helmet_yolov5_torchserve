@@ -111,14 +111,14 @@ $ source yolov5-env/bin/activate
 
 $ pip3 install -r requirements.txt
 $ python3 -m pip install jupyter      # only need to install once if you don't have jupyter 
-$ jupyter notebook # open the /helmet_yolov5_torchserve/resource/pytorch-yolov5-helmet-detection-inference.ipynb
+$ jupyter notebook 
+# open the /helmet_yolov5_torchserve/resource/pytorch-yolov5-helmet-detection-inference.ipynb and run the code cell
 
 
 # Stop the model serving
 $ docker container ls
 $ docker stop [the helmet container CONTAINER ID]
 ```
-
 
 
 ![Image text](./result.jpg)
