@@ -21,8 +21,9 @@ $ python3 --version
 #### Installation
 
 ```bash
-$ git clone git@github.com:harperjuanl/helmet_yolov5_torchserve.git
+$ git clone https://github.com/harperjuanl/helmet_yolov5_torchserve.git
 $ cd helmet_yolov5_torchserve
+# if you can not clone, you can also download from this link https://github.com/harperjuanl/helmet_yolov5_torchserve/archive/refs/heads/main.zip, and extract the zip file
 
 $ docker build . -t helmet_yolov5_torchserve:v1
 $ docker run -p 8080:8080 -p 8081:8081 helmet_yolov5_torchserve:v1
@@ -117,6 +118,7 @@ Output:
 
 
 # You can also choose to detect with the jupyter notebook
+$ python3 -m pip install virtualenv
 $ python3 -m virtualenv helmet-env
 $ source yolov5-env/bin/activate
 
