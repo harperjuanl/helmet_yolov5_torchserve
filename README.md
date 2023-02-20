@@ -36,12 +36,14 @@ $ curl -X PUT "http://0.0.0.0:8081/models/helmet_detection?min_worker=3"
 #### Installation without Docker
 
 ```bash
+$ sudo apt-get install openjdk-11-jdk
 $ git clone https://github.com/harperjuanl/helmet_yolov5_torchserve.git
-$ cd helmet_yolov5_torchserve/resource/
+$ cd helmet_yolov5_torchserve/resource/helmet_yolov5
 
-$ pip3 install -r helmet_yolov5/requirements.txt -i https://mirrors.aliyun.com/pypi/simple/
+$ pip3 install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple/
 $ python3-pip install torchserve
-$ torchserve --start --model-store model_store --models helmet_detection.mar
+$ cd .. 
+$ torchserve --start --ncs --model-store model_store --models helmet_detection.mar
 
 # Register model
 $ curl -X POST  "http://localhost:8081/models?url=./model_store/helmet_detection.mar&model_name=helmet_detection"
