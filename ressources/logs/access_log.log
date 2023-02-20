@@ -1,6 +1,0 @@
-2023-02-20T10:25:02,290 - /127.0.0.1:51400 "GET /predictions/helmet_detection HTTP/1.1" 503 691
-2023-02-20T10:25:16,112 - /127.0.0.1:51403 "POST /models?url=./model_store/helmet_detection.mar&model_name=helmet_detection HTTP/1.1" 409 481
-2023-02-20T10:25:21,983 - /127.0.0.1:51404 "PUT /models/helmet_detection?min_worker=3 HTTP/1.1" 202 93
-2023-02-20T10:25:29,902 - /127.0.0.1:51406 "GET /predictions/helmet_detection HTTP/1.1" 503 44
-2023-02-20T10:25:31,971 - /127.0.0.1:51408 "GET /predictions/helmet_detection HTTP/1.1" 503 47
-2023-02-20T10:26:23,094 - /127.0.0.1:51417 "PUT /predictions/helmet_detection HTTP/1.1" 200 464

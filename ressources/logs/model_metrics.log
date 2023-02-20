@@ -1,2 +1,0 @@
-2023-02-20T10:26:23,093 - HandlerTime.Milliseconds:460.65|#ModelName:helmet_detection,Level:Model|#hostname:juanlEMD6R.vmware.com,requestID:0cbde921-cbd8-4f4f-92ee-4a19477b2eb1,timestamp:1676859983
-2023-02-20T10:26:23,093 - PredictionTime.Milliseconds:461.08|#ModelName:helmet_detection,Level:Model|#hostname:juanlEMD6R.vmware.com,requestID:0cbde921-cbd8-4f4f-92ee-4a19477b2eb1,timestamp:1676859983
