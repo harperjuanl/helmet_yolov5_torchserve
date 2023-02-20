@@ -1,4 +1,4 @@
-## Helmet Detection Deployment on Signle Node
+## Helmet Detection Deployment on Single Node
 
 #### Prerequisites
 
@@ -18,7 +18,7 @@ $ python3 --version
 - Docker:  Docker Engine comes bundled with Docker Desktop for Linux, this is the easiest and quickest way to get started. If not, you could follow the [detailed installation guide](https://docs.docker.com/engine/install/ubuntu/)
 
 
-#### Installation
+#### Installation with Docker
 
 ```bash
 $ git clone https://github.com/harperjuanl/helmet_yolov5_torchserve.git
@@ -31,9 +31,21 @@ $ docker run -p 8080:8080 -p 8081:8081 helmet_yolov5_torchserve:v1
 # Register model
 $ curl -X POST  "http://localhost:8081/models?url=./model_store/helmet_detection.mar&model_name=helmet_detection"
 $ curl -X PUT "http://0.0.0.0:8081/models/helmet_detection?min_worker=3"
-
 ```
 
+#### Installation without Docker
+
+```bash
+$ git clone https://github.com/harperjuanl/helmet_yolov5_torchserve.git
+$ cd helmet_yolov5_torchserve/resource
+
+$ python3-pip install torchserve
+$ torchserve --start --model-store model_store --models helmet_detection.mar
+
+# Register model
+$ curl -X POST  "http://localhost:8081/models?url=./model_store/helmet_detection.mar&model_name=helmet_detection"
+$ curl -X PUT "http://0.0.0.0:8081/models/helmet_detection?min_worker=3"
+```
 
 #### Detection & Result
 
