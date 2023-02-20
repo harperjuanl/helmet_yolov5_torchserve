@@ -37,8 +37,9 @@ $ curl -X PUT "http://0.0.0.0:8081/models/helmet_detection?min_worker=3"
 
 ```bash
 $ git clone https://github.com/harperjuanl/helmet_yolov5_torchserve.git
-$ cd helmet_yolov5_torchserve/resource
+$ cd helmet_yolov5_torchserve/resource/
 
+$ pip3 install -r helmet_yolov5/requirements.txt -i https://mirrors.aliyun.com/pypi/simple/
 $ python3-pip install torchserve
 $ torchserve --start --model-store model_store --models helmet_detection.mar
 
